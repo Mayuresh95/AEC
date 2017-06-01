@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+  <title>HOME</title>     
+<style>
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+
+th, td {
+    padding: 5px;
+    text-align: left;
+    text-shadow: 1px 1px 2px black;
+    font-size: 1.2em;
+    color:#029323;
+
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #1DD85D;
+    float: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato';
+}
+
+.heading-primary {
+  font-size: 2em;
+  padding: 0em;
+  text-align: center;
+  color: #fff;  
+  text-shadow: 5px 5px 6px black;
+}
+
+.accordion dl,
+.accordion-list {
+  border: 1px solid #ddd;
+}
+.accordion dl:after,
+.accordion-list:after {
+  content: "";
+  display: block;
+  height: 1em;
+  width: 100%;
+  background-color: #079E3B;
+}
+
+.accordion dd,
+.accordion__panel {
+  background-color: #eee;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.accordion p {
+  padding: 1em 2em 1em 2em;
+}
+
+.accordion {
+  
+  background-color: #eee;
+}
+
+.container1 {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0em 0 0em 0;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1em 0 0em 0;
+}
+
+.accordionTitle,
+.accordion__Heading {
+  background-color: #1DD85D;
+  text-align: center;
+  font-weight: 700;
+  padding: 2em;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+  border-bottom: 1px solid #30bb64;
+}
+.accordionTitle:before,
+.accordion__Heading:before {
+  content: "+";
+  font-size: 1.5em;
+  line-height: 0.5em;
+  float: left;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.accordionTitle:hover,
+.accordion__Heading:hover {
+  background-color: #079E3B;
+}
+
+.accordionTitleActive,
+.accordionTitle.is-expanded {
+  background-color: #079E3B;
+}
+.accordionTitleActive:before,
+.accordionTitle.is-expanded:before {
+  -webkit-transform: rotate(-225deg);
+          transform: rotate(-225deg);
+}
+
+.accordionItem {
+  height: auto;
+  overflow: hidden;
+  max-height: 23em;
+  -webkit-transition: max-height 1s;
+  transition: max-height 1s;
+}
+
+@media screen and (min-width: 48em) {
+  .accordionItem {
+    max-height: 23em;
+    -webkit-transition: max-height 0.5s;
+    transition: max-height 0.5s;
+  }
+}
+
+.accordionItem.is-collapsed {
+  max-height: 0;
+}
+
+.no-js .accordionItem.is-collapsed {
+  max-height: auto;
+}
+
+</style>
+</head>
+
+
+<body translate="no">
+
+
+  <div class="container1">
+         <ul> <p class="heading-primary">Automation For Energy Conservation</p> </ul>
+  </div>
+
+<div class="container">
+          <div class="accordion">
+            
+            <dl>
+              
+
+              <dt>
+                <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">PIR SENSOR  1  [ Room Number / Area ]</a>
+              </dt>
+              
+        <dd class="accordion-content accordionItem is-collapsed" id="accordion1" aria-hidden="true">                
+	<br><br>
+
+	<table style="width:60%">
+
+		<tr>
+		    <td>Status :</td>
+		    <td id="status1">Not Active</td>		
+		</tr>
+
+		<tr>
+		    <td>PIR State :</td>
+		    <td id="state1">Low</td>	
+		</tr>
+
+		<tr>
+		    <td>Motion Detected At :</td>
+		    <td id="motionDet1">.</td>	
+		</tr>
+
+		<tr>
+		    <td>Motion Ended At :</td>
+		    <td id="motionEnd1">.</td>	
+		</tr>
+
+		<tr>
+		    <td>Motion Lasted For :</td>
+		    <td id="motionLasted1">.</td>	
+		</tr>
+	</table>
+
+
+	<img src="http://images.clipshrine.com/getimg/PngThumb-lamp-switched-off-15569.png"  id="led1" style="position:relative; left:500px; top:-160px; width:150px; height:230px; border:none;" alt="Light Bulb Indicator"
+
+        </dd>
+
+
+              <dt>
+                <a href="#accordion2" aria-expanded="false" aria-controls="accordion2" class="accordion-title accordionTitle js-accordionTrigger">
+                  PIR SENSOR  2  [ Room Number / Area ]</a>
+              </dt>
+              <dd class="accordion-content accordionItem is-collapsed" id="accordion2" aria-hidden="true">
+	<br><br>
+	<table style="width:60%">
+
+		<tr>
+		    <td>Status :</td>
+		    <td id="status2">Not Active</td>		
+		</tr>
+
+		<tr>
+		    <td>PIR State :</td>
+		    <td id="state2">Low</td>	
+		</tr>
+
+		<tr>
+		    <td>Motion Detected At :</td>
+		    <td id="motionDet2">.</td>	
+		</tr>
+
+		<tr>
+		    <td>Motion Ended At :</td>
+		    <td id="motionEnd2">.</td>	
+		</tr>
+
+		<tr>
+		    <td>Motion Lasted For :</td>
+		    <td id="motionLasted2">.</td>	
+		</tr>
+		</tr>
+	</table>
+
+
+	<img src="http://images.clipshrine.com/getimg/PngThumb-lamp-switched-off-15569.png" id="led2" style="position:relative; left:500px; top:-160px; width:150px; height:230px; border:none;" alt="Light Bulb Indicator"
+
+              </dd>
+
+
+              <dt>
+                <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger" id="pir3">
+                  PIR SENSOR  3  [ Room Number / Area ]</a>
+              </dt>
+              <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+                	<br><br>
+	<table style="width:60%">
+
+		<tr>
+		    <td>Status :</td>
+		    <td id="status3">Not Active</td>		
+		</tr>
+
+		<tr>
+		    <td>PIR State :</td>
+		    <td id="state3">Low</td>	
+		</tr>
+
+		<tr>
+		    <td>Motion Detected At :</td>
+		    <td id="motionDet3">.</td>	
+		</tr>
+
+		<tr>
+		    <td>Motion Ended At :</td>
+		    <td id="motionEnd3">.</td>	
+		</tr>
+
+		<tr>
+		    <td>Motion Lasted For :</td>
+		    <td id="motionLasted3">.</td>
+		</tr>
+	</table>
+
+
+	<img src="http://images.clipshrine.com/getimg/PngThumb-lamp-switched-off-15569.png" id="led3" style="position:relative; left:500px; top:-160px; width:150px; height:230px; border:none;" alt="Light Bulb Indicator"
+
+              </dd>
+
+            </dl>
+          </div><br><br>
+        </div>
+    
+
+<script>   
+
+var myVar = setInterval(myTimer, 2000);
+
+function myTimer() 
+{
+	/*var image1 = document.getElementById('led1');
+	var image2 = document.getElementById('led2');
+	var image3 = document.getElementById('led3');*/
+
+	//document.getElementById("status1").innerHTML = localStorage.getItem('status1');
+
+	document.getElementById("status1").innerHTML = jspirState;
+	document.getElementById("pir3").innerHTML = jspirState;
+
+	/*document.getElementById("state1").innerHTML = localStorage.getItem('state1');
+
+
+	document.getElementById("motionDet1").innerHTML = localStorage.getItem("motionDet1")+" seconds";
+	document.getElementById("motionEnd1").innerHTML = localStorage.getItem("motionEnd1")+" seconds";
+	document.getElementById("motionLasted1").innerHTML = localStorage.getItem("motionLasted1")+" seconds";*/
+	
+	/*if(localStorage.getItem("state1")==1)
+	{
+		image1.src = "http://4.bp.blogspot.com/-pkH1ifjMND4/VnZQWO9k6sI/AAAAAAAABZY/tYroKlOJRSo/s320/light-bulb.gif";
+	}
+	else
+	{
+		image1.src = "http://images.clipshrine.com/getimg/PngThumb-lamp-switched-off-15569.png";
+	}*/
+}
+ 
+
+
+
+(function()
+{
+	var d = document,
+	accordionToggles = d.querySelectorAll('.js-accordionTrigger'),
+	setAria,
+	setAccordionAria,
+	switchAccordion,
+  touchSupported = ('ontouchstart' in window),
+  pointerSupported = ('pointerdown' in window);
+  
+  skipClickDelay = function(e)
+  {
+    e.preventDefault();
+    e.target.click();
+  }
+	setAriaAttr = function(el, ariaType, newProperty)
+	{
+		el.setAttribute(ariaType, newProperty);
+	};
+	setAccordionAria = function(el1, el2, expanded)
+	{
+		switch(expanded) 
+		{
+		      case "true":
+		      	setAriaAttr(el1, 'aria-expanded', 'true');
+		      	setAriaAttr(el2, 'aria-hidden', 'false');
+		      	break;	
+		      case "false":
+		      	setAriaAttr(el1, 'aria-expanded', 'false');
+		      	setAriaAttr(el2, 'aria-hidden', 'true');
+		      	break;
+		      default:
+			break;
+		}
+	};
+
+
+//function
+switchAccordion = function(e) {
+  console.log("triggered");
+	e.preventDefault();
+	var thisAnswer = e.target.parentNode.nextElementSibling;
+	var thisQuestion = e.target;
+	if(thisAnswer.classList.contains('is-collapsed')) {
+		setAccordionAria(thisQuestion, thisAnswer, 'true');
+	} else {
+		setAccordionAria(thisQuestion, thisAnswer, 'false');
+	}
+  	thisQuestion.classList.toggle('is-collapsed');
+  	thisQuestion.classList.toggle('is-expanded');
+		thisAnswer.classList.toggle('is-collapsed');
+		thisAnswer.classList.toggle('is-expanded');
+ 	
+  	thisAnswer.classList.toggle('animateIn');
+	};
+
+	for (var i=0,len=accordionToggles.length; i<len; i++) {
+		if(touchSupported) {
+      accordionToggles[i].addEventListener('touchstart', skipClickDelay, false);
+    }
+    if(pointerSupported){
+      accordionToggles[i].addEventListener('pointerdown', skipClickDelay, false);
+    }
+    accordionToggles[i].addEventListener('click', switchAccordion, false);
+  }
+})();
+ </script>
+
+
+</body></html>
